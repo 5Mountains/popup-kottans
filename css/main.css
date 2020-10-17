@@ -1,24 +1,11 @@
-/* 
-    Global style START 
-*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
     outline: none;
     color: #000;
 }
-/*
-    Global style END
-*/
 
-
-
-/* 
-    Main menu style START
-*/
 .nav {
     margin: 1rem;
 }
@@ -27,6 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    list-style-type: none;
 }
 
 .nav__menu [type="checkbox"] {
@@ -68,7 +56,7 @@
 .menu__item-label::before {
     opacity: 0;
     content: "";
-    z-index: 10;
+    z-index: 2;
     position: absolute;
     top: 60px;
     right: 130px;
@@ -84,6 +72,7 @@
 .menu__item-label,
 .menu__link-bell,
 .menu__link-user {
+    text-decoration: none;
     border: 1px solid transparent;
 }   
 
@@ -127,17 +116,9 @@
 .menu__link-user:hover {
     box-shadow: 0 1px 0 rgba(0,0,0,.15);
 }
-/* 
-    Main menu style END
-*/
 
-
-
-/* 
-    Submenu of main menu style START
-*/
 .menu__submenu {
-    z-index: 5;
+    z-index: 1;
     width: 320px;
     max-height: 500px;
     position: absolute;
@@ -145,12 +126,12 @@
     top: 65px;
     right: 70px;
     border: 1px solid #ccc;
-    z-index: 1;
     flex-wrap: wrap;
     justify-content: space-between;
     overflow-x: hidden;
     padding: .5rem .5rem 1.6rem .5rem;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .3);
+    list-style-type: none;
 }
 
 .submenu__item {
@@ -167,6 +148,7 @@
     display: block;
     text-align: center;
     border: 1px solid transparent;
+    text-decoration: none;
 }
 
 .submenu__link img {
@@ -185,7 +167,6 @@
     display: none;
 }
 
-/* scrollbar style start*/
 .menu__submenu::-webkit-scrollbar {
     width: .15rem;
 }
@@ -198,7 +179,6 @@
     background-color: rgb(182, 180, 180);
     border: 1px solid rgb(58, 64, 70);
 }
-/* scrollbar style end*/
 
 .submenu__item-label {
     position: absolute;
@@ -210,19 +190,13 @@
     padding: .4rem 0;
     text-align: center;
 }
-/* 
-    Submenu of main menu style END
-*/
 
-
-/*
-    Extra menu of submenu style START
-*/
 .submenu__extramenu {
     display: none;
     flex-wrap: wrap;
     overflow: auto;
     margin-top: 3rem;
+    z-index: 1;
 }
 
 .submenu__item-input:checked ~ .submenu__extramenu {
@@ -238,7 +212,7 @@
 }
 
 .submenu__extramenu::before{
-    z-index: 9;
+    z-index: 1;
     content: '';
     width: 100%;
     position: absolute;
@@ -261,6 +235,7 @@
     display: block;
     text-align: center;
     border: 1px solid transparent;
+    text-decoration: none;
 }
 
 .extramenu__link:hover {
@@ -275,17 +250,24 @@
     width: 75%;
 }
 
-.extramenu__extralink {
-    width: 100%;
-    padding-top: 1.5rem;
-    display: block;
+.extramenu__item-link {
     text-align: center;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.extramenu__extralink {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: .5rem;
 }
 
 .extramenu__extralink:hover {
     text-decoration: underline;
     opacity: .75;
 }
-/* 
-    Extra menu of submenu of main menu style END
-*/
+
+.extramenu__extralink:focus {
+    border: 1px solid #00f;
+}                   
