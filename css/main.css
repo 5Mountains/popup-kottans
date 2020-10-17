@@ -38,6 +38,11 @@
     padding-right: 1rem;
 }
 
+.menu__item:nth-child(1),
+.menu__item:nth-child(2) {
+    padding-right: .5rem;
+}
+
 .menu__item-input {
     position: absolute;
 }
@@ -263,7 +268,7 @@
 }
   
 .extramenu__link:focus {
-    border: 1px solid 00f;
+    border: 1px solid #00f;
 }
 
 .extramenu__link img {

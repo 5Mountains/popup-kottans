@@ -5,4 +5,3 @@ This :open_file_folder: shows my version of the realization of the task [HTML & 
 This app was performed using HTML and CSS without JS or any libraries.
 
 Link - [pure html/css popup](https://5mountains.github.io/popup-kottans/)
-
