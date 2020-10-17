@@ -55,7 +55,7 @@
     height: 30px;
     display: block;
     cursor: pointer;
-    background-image: url("/img/menu/popup-button.png");
+    background-image: url("../img/menu/popup-button.png");
     background-size: cover;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .menu__link-bell {
-    background-image: url("/img/menu/bell.png");
+    background-image: url("../img/menu/bell.png");
     background-size: cover;
     display: block;
     width: 22px;
@@ -95,7 +95,7 @@
 }
 
 .menu__link-user {
-    background-image: url("/img/menu/user.png");
+    background-image: url("../img/menu/user.png");
     background-size: cover;
     display: block;
     width: 35px;
